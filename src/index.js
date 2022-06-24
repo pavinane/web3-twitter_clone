@@ -1,13 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { MoralisProvider } from "react-moralis";
+import { NotificationProvider } from "web3uikit";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <MoralisProvider
+      appId="LuQ96EHTYHr7k8XHYH0r9nLsq3i4FSnHMuK5FzLq"
+      serverUrl="https://ckvxtbbbrsil.usemoralis.com:2053/server"
+    >
+      <NotificationProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </NotificationProvider>
+    </MoralisProvider>
   </React.StrictMode>
 );
 
