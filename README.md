@@ -1,3 +1,3 @@
 ## create Twitter Clone in Web3
 
-Netlify Site URL](https://bejewelled-kitten-f99973.netlify.com)
+Netlify Site URL](https://astounding-entremet-907332.netlify.app)
